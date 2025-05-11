@@ -1,0 +1,21 @@
+:root {
+    /* Aspect Ratios */
+    --iui-aspect-1-1: 1 / 1;
+    --iui-aspect-16-9: 16 / 9;
+    --iui-aspect-4-3: 4 / 3;
+    --iui-aspect-3-2: 3 / 2;
+    --iui-aspect-21-9: 21 / 9;
+
+    /* Container Sizes */
+    --iui-container-xs: 320px;
+    --iui-container-sm: 480px;
+    --iui-container-md: 768px;
+    --iui-container-lg: 1024px;
+    --iui-container-xl: 1280px;
+    --iui-container-2xl: 1536px;
+
+    /* Component Sizes (for future use) */
+    --iui-component-card-width: 320px;
+    --iui-component-modal-width: 480px;
+    --iui-component-button-height: 40px;
+}

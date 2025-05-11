@@ -1,0 +1,289 @@
+.app {
+    min-height: 100vh;
+    background: #f3f4f6;
+    padding: 2rem;
+}
+
+.app-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.app-header h1 {
+    color: #1f2937;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.app-main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.demo-section {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+.demo-section h2 {
+    margin-top: 0;
+    color: #1f2937;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.demo-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* Card Styles */
+.card {
+    background: white;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.card h3 {
+    margin: 0 0 0.5rem 0;
+    color: #1f2937;
+}
+
+.card p {
+    margin: 0;
+    color: #6b7280;
+    font-size: 0.875rem;
+}
+
+/* Shadow Demo Styles */
+.shadow-demo-card {
+    border: 1px solid #e5e7eb;
+    transition: box-shadow 0.3s ease;
+}
+
+/* Basic Shadows */
+.hover\:shadow-none:hover {
+    box-shadow: var(--shadow-none);
+}
+
+.hover\:shadow-sm:hover {
+    box-shadow: var(--shadow-sm);
+}
+
+.hover\:shadow-md:hover {
+    box-shadow: var(--shadow-md);
+}
+
+.hover\:shadow-lg:hover {
+    box-shadow: var(--shadow-lg);
+}
+
+.hover\:shadow-xl:hover {
+    box-shadow: var(--shadow-xl);
+}
+
+.hover\:shadow-2xl:hover {
+    box-shadow: var(--shadow-2xl);
+}
+
+/* Colored Shadows */
+.hover\:shadow-blue-sm:hover {
+    box-shadow: var(--shadow-blue-sm);
+}
+
+.hover\:shadow-blue-md:hover {
+    box-shadow: var(--shadow-blue-md);
+}
+
+.hover\:shadow-blue-lg:hover {
+    box-shadow: var(--shadow-blue-lg);
+}
+
+.hover\:shadow-purple-sm:hover {
+    box-shadow: var(--shadow-purple-sm);
+}
+
+.hover\:shadow-purple-md:hover {
+    box-shadow: var(--shadow-purple-md);
+}
+
+.hover\:shadow-purple-lg:hover {
+    box-shadow: var(--shadow-purple-lg);
+}
+
+/* Directional Shadows */
+.hover\:shadow-top:hover {
+    box-shadow: var(--shadow-top);
+}
+
+.hover\:shadow-bottom:hover {
+    box-shadow: var(--shadow-bottom);
+}
+
+.hover\:shadow-left:hover {
+    box-shadow: var(--shadow-left);
+}
+
+.hover\:shadow-right:hover {
+    box-shadow: var(--shadow-right);
+}
+
+/* Opacity Demo Styles */
+.opacity-demo-card {
+    background: #4f46e5;
+    color: white;
+}
+
+.opacity-content {
+    text-align: center;
+}
+
+.opacity-pattern {
+    height: 100px;
+    background: repeating-linear-gradient(45deg,
+            rgba(255, 255, 255, 0.1),
+            rgba(255, 255, 255, 0.1) 10px,
+            rgba(255, 255, 255, 0.2) 10px,
+            rgba(255, 255, 255, 0.2) 20px);
+    border-radius: 0.25rem;
+    margin-top: 1rem;
+}
+
+.opacity-interactive-hint {
+    margin-top: 0.5rem;
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 0.25rem 0.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 0.25rem;
+    display: inline-block;
+}
+
+/* Overlay Demo Styles */
+.overlay-demo-card {
+    background: #4f46e5;
+    color: white;
+    text-align: center;
+}
+
+/* Modal Styles */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    z-index: 50;
+}
+
+/* Basic Overlays */
+.modal-overlay.overlay-light {
+    background: var(--overlay-light);
+}
+
+.modal-overlay.overlay-dark {
+    background: var(--overlay-dark);
+}
+
+.modal-overlay.overlay-blur {
+    backdrop-filter: var(--overlay-blur);
+    background: rgba(0, 0, 0, 0.1);
+}
+
+/* Colored Overlays */
+.modal-overlay.overlay-blue {
+    background: var(--overlay-blue);
+}
+
+.modal-overlay.overlay-purple {
+    background: var(--overlay-purple);
+}
+
+.modal-overlay.overlay-green {
+    background: var(--overlay-green);
+}
+
+.modal-overlay.overlay-red {
+    background: var(--overlay-red);
+}
+
+/* Gradient Overlays */
+.modal-overlay.overlay-gradient-light {
+    background: var(--overlay-gradient-light);
+}
+
+.modal-overlay.overlay-gradient-dark {
+    background: var(--overlay-gradient-dark);
+}
+
+.modal-overlay.overlay-gradient-blue {
+    background: var(--overlay-gradient-blue);
+}
+
+/* Blur Variations */
+.modal-overlay.overlay-blur-sm {
+    backdrop-filter: var(--overlay-blur-sm);
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.modal-overlay.overlay-blur-md {
+    backdrop-filter: var(--overlay-blur-md);
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.modal-overlay.overlay-blur-lg {
+    backdrop-filter: var(--overlay-blur-lg);
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.modal-overlay.overlay-blur-xl {
+    backdrop-filter: var(--overlay-blur-xl);
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.modal-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: var(--shadow-xl);
+}
+
+.modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #6b7280;
+    padding: 0.25rem;
+    line-height: 1;
+}
+
+.modal-close:hover {
+    color: #1f2937;
+}
+
+.modal-demo-content {
+    text-align: center;
+}
+
+.modal-demo-content h3 {
+    margin: 0 0 1rem 0;
+    color: #1f2937;
+}
+
+.modal-demo-content p {
+    margin: 0;
+    color: #6b7280;
+}
